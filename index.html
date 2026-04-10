@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网络安全生态位人格测试</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">Cyber Security Persona</p>
+        <h1>网络安全生态位人格测试</h1>
+        <p class="subtitle">
+          25 题评估：技术风格 + 工作风格，输出你的职业生态位与组织身份认知。
+        </p>
+      </header>
+
+      <section class="panel" id="panel">
+        <div id="start-view" class="view">
+          <button id="start-btn" class="btn btn-primary">开始测试</button>
+        </div>
+
+        <div id="quiz-view" class="view hidden">
+          <div class="quiz-top">
+            <div class="progress-meta">
+              <span id="progress-text">第 1 / 25 题</span>
+              <span id="answered-text">已答 0 题</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+          </div>
+
+          <article class="question-card">
+            <p id="question-tag" class="question-tag">技术风格 · 技术方向</p>
+            <h2 id="question-text">问题加载中...</h2>
+            <div id="option-list" class="option-list"></div>
+          </article>
+
+          <div class="quiz-actions">
+            <button id="prev-btn" class="btn btn-ghost">上一题</button>
+            <button id="result-btn" class="btn btn-primary">查看结果</button>
+          </div>
+        </div>
+
+        <div id="result-view" class="view hidden">
+          <p class="result-label">你的生态位人格</p>
+          <h2 id="result-role">-</h2>
+          <p id="result-code" class="result-code">画像编码：------</p>
+          <p id="result-org" class="result-org">组织身份认知：-</p>
+          <p id="result-desc" class="result-desc">描述加载中...</p>
+          <div id="dimension-grid" class="dimension-grid"></div>
+          <div class="score-section">
+            <p class="score-title">各项人格分数</p>
+            <div id="role-score-bars" class="role-score-bars"></div>
+          </div>
+          <button id="restart-btn" class="btn btn-primary">重新测试</button>
+        </div>
+      </section>
+
+      <footer class="footnote">
+        <span>Designed by 重生之成为赛博女保安</span><br />
+        意见与建设：
+        <a href="https://github.com/AugustineFulgur/WATI" target="_blank" rel="noopener noreferrer">
+          https://github.com/AugustineFulgur/WATI
+        </a>
+      </footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
